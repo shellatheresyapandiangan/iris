@@ -43,7 +43,7 @@ def iris():
     st.image(img, width=500)
 
     if st.sidebar.button('Predict!'):
-        with open("model_iris .pkl", 'rb') as file:
+        with open("generate_iris.pkl", 'rb') as file:
             model = pickle.load(file)
         prediction = model.predict(input_df)
         result = [
